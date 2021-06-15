@@ -21,8 +21,8 @@ const Header = () => {
     
     return (
         <div className="navbar" style={{top: visible ? '0' : '-80px' }}>
-            <motion.div className="logo" variants={logo} initial="start" animate="end">
-                <Logo onClick={() => window.location.reload()}/>
+            <motion.div whileHover={hover} className="logo" variants={logo} initial="start" animate="end">
+                <Logo className="header-logo" onClick={() => window.location.reload()}/>
             </motion.div>
             <motion.div className="sections" variants={parent} initial="start" animate="end">
                 <motion.p variants={child}>About</motion.p >
@@ -67,4 +67,8 @@ const logo = {
             duration: 1
         }
     }
+}
+
+const hover = {
+    scale: 1.2
 }

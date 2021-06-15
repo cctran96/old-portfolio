@@ -23,14 +23,13 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-    width: 100px;
     align-self: flex-start;
     height: 80px;
 }
 
-.logo img {
-    height: 100%;
-    margin-right: 20px;
+.header-logo:hover {
+    cursor: pointer;
+    fill: rgb(0, 0, 104);
 }
 
 .sections {
