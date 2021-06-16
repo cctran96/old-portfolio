@@ -27,7 +27,7 @@ const innerVar = {
     start: {
         rotate: 0,
         opacity: 0,
-        stroke: "blue",
+        stroke: "#dcffe8",
         strokeWidth: "4px",
         pathLength: 0,
     },
@@ -44,7 +44,7 @@ const innerVar = {
 const outerVar = {
     start : {
         opacity: 0,
-        stroke: "blue",
+        stroke: "#dcffe8",
         strokeWidth: "4px",
         pathLength: 0,
     },

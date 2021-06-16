@@ -5,9 +5,9 @@ const Banner = () => {
     return (
         <div className="banner-container">
             <motion.div className="banner" initial="start" animate="end">
-                <motion.h1 variants={h1Var} style={{"fontSize": "20px"}}>Hi, my name is</motion.h1>
-                <motion.h2 variants={h2Var}>Chau Tran.</motion.h2>
-                <motion.p variants={pVar}>I'm a software engineer based in the bay area who has a love for developing comprehensive applications that maximizes user expereince.</motion.p>
+                <motion.h1 variants={h1Var} style={{"fontSize": "20px"}}>Hi, I'm</motion.h1>
+                <motion.h2 variants={h2Var}>Chau Tran</motion.h2>
+                <motion.h3 variants={h3Var}>and I'm a Full Stack Developer.</motion.h3>
             </motion.div>
         </div>
     )
@@ -33,7 +33,7 @@ const h2Var = {
     }
 }
 
-const pVar = {
+const h3Var = {
     start: {opacity: 0},
     end: {
         opacity: 1,

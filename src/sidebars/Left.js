@@ -30,7 +30,7 @@ const about = {
     end: {
         opacity: 1,
         y: 0,
-        transition: {delay: 2.1}
+        transition: {delay: 2.4}
     }
 }
 
@@ -43,7 +43,7 @@ const exp = {
     end: {
         opacity: 1,
         y: 0,
-        transition: {delay: 2.4}
+        transition: {delay: 2.7}
     }
 }
 
@@ -56,7 +56,7 @@ const project = {
     end: {
         opacity: 1,
         y: 0,
-        transition: {delay: 2.7}
+        transition: {delay: 3}
     }
 }
 
@@ -69,6 +69,6 @@ const contact = {
     end: {
         opacity: 1,
         y: 0,
-        transition: {delay: 3}
+        transition: {delay: 3.3}
     }
 }
