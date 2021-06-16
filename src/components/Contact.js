@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 
-const Contact = () => {
+const Contact = (props, ref) => {
     return (
-        <div className="contact">
+        <div className="contact" ref={ref}>
             <h1>Connect With Me</h1>
+
         </div>
     )
 }
 
-export default Contact
+export default forwardRef(Contact)

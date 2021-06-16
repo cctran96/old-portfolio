@@ -1,5 +1,6 @@
 body {
     background: rgb(2, 2, 37);
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -44,6 +45,10 @@ body::-webkit-scrollbar {
     justify-content: space-around;
     width: 70%;
     height: 100%;
+}
+
+.sections p {
+    cursor: pointer;
 }
 
 .banner-container {
@@ -148,7 +153,6 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 1000px;
 }
 
@@ -204,7 +208,6 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 800px;
     border: 1px solid rebeccapurple;
 }

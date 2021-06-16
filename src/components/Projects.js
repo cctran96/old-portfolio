@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 
-const Projects = () => {
+const Projects = (props, ref) => {
     return (
-        <div className="projects">
+        <div className="projects" ref={ref}>
             
         </div>
     )
 }
 
-export default Projects
+export default forwardRef(Projects)

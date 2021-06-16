@@ -1,14 +1,14 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-const Left = () => {
+const Left = ({toBio, toProject, toContact}) => {
     return (
         <div className="left-container">
             <motion.div className="left" initial="start" animate="end">
-                <motion.a className="text" whileHover={hover} variants={about}>About</motion.a>
+                <motion.a className="text" onClick={toBio} whileHover={hover} variants={about}>About</motion.a>
                 <motion.a className="text" whileHover={hover} variants={exp}>Experience</motion.a>
-                <motion.a className="text" whileHover={hover} variants={project}>Projects</motion.a>
-                <motion.a className="text" whileHover={hover} variants={contact}>Contact</motion.a>
+                <motion.a className="text" onClick={toProject} whileHover={hover} variants={project}>Projects</motion.a>
+                <motion.a className="text" onClick={toContact} whileHover={hover} variants={contact}>Contact</motion.a>
             </motion.div>
         </div>
     )

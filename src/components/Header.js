@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../icons/Logo-01.svg'
 import { motion } from 'framer-motion'
 
 
-const Header = () => {
+const Header = ({toBio, toProject, toContact}) => {
     const [prevScrollPos, setPrevScrollPos] = useState(0)
     const [visible, setVisible] = useState(true)
 
@@ -25,10 +25,10 @@ const Header = () => {
                 <Logo className="header-logo" onClick={() => window.location.reload()}/>
             </motion.div>
             <motion.div className="sections" variants={parent} initial="start" animate="end">
-                <motion.p variants={child}>About</motion.p >
+                <motion.p variants={child} onClick={toBio}>About</motion.p >
                 <motion.p variants={child}>Experience</motion.p >
-                <motion.p variants={child}>Projects</motion.p >
-                <motion.p variants={child}>Contact</motion.p >
+                <motion.p variants={child} onClick={toProject}>Projects</motion.p >
+                <motion.p variants={child} onClick={toContact}>Contact</motion.p >
             </motion.div>
         </div>
     )
