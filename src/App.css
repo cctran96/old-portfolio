@@ -13,7 +13,10 @@ body::-webkit-scrollbar {
 }
 
 .content-container {
+    display: flex;
+    flex-direction: column;
     width: 90%;
+    align-items: center;
     align-self: center;
 }
 
@@ -63,6 +66,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     padding-left: 7%;
     padding-right: 7%;
+    border: 1px solid rgb(2, 2, 37);
 }
 
 .banner {
@@ -92,6 +96,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    border: 1px solid rgb(2, 2, 37);
 }
 
 .ani-logo svg {
@@ -168,7 +173,7 @@ body::-webkit-scrollbar {
     border-radius: 50%;
 }
 
-.about h1, .contact h1 {
+h1 {
     color: cadetblue;
 }
 
@@ -207,8 +212,72 @@ body::-webkit-scrollbar {
 }
 
 .projects {
-    height: 1000px;
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.projects h1 {
+    margin-bottom: 10px;
+}
+
+.projects h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.demo, .tv-demo {
+    margin-top: 25px;
+}
+
+.demo a {
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.demo a:hover, .tv-demo a:hover {
+    color: cadetblue;
+    background: rgb(2, 2, 37);
+    border-color: cadetblue;
+    cursor: pointer;
+}
+
+.tv-demo a {
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+    background: rgb(2, 2, 37);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--pokemon .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px darkred, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--library .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px gray, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--tv .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+}
+
+.tools svg {
+    margin: 25px 10px 0 0;
 }
 
 .contact {
