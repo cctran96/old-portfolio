@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 .header-logo:hover {
     cursor: pointer;
-    fill: rgb(220, 255, 232);
+    fill: #dcffe8;
 }
 
 .sections {
@@ -43,12 +43,18 @@ body::-webkit-scrollbar {
     margin-left: auto;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
+    width: min(70%, 700px);
     height: 100%;
 }
 
 .sections p {
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.sections p:hover {
+    transform: scale(1.2) translateY(-5px);
+    color:white;
 }
 
 .banner-container {
@@ -154,6 +160,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     height: 1000px;
+    color: white;
 }
 
 .profile-img {
@@ -196,7 +203,7 @@ body::-webkit-scrollbar {
 .skills li:before {
     content: "➲";
     padding-right: 7px;
-    color: rgb(220, 255, 232);
+    color: #dcffe8;;
 }
 
 .projects {
