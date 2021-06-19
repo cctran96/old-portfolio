@@ -280,10 +280,22 @@ h1 {
     margin: 25px 10px 0 0;
 }
 
+.more-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.more-projects p {
+    cursor: pointer;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 800px;
+    width: 90%;
     border: 1px solid rebeccapurple;
 }
