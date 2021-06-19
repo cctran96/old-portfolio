@@ -3,9 +3,9 @@ import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline
 import 'react-vertical-timeline-component/style.min.css';
 import {FaReact} from 'react-icons/fa'
 import {DiRuby, DiJavascript1, DiSqllite, } from 'react-icons/di'
-import {SiRails, SiPostgresql} from 'react-icons/si'
+import {SiRails, SiPostgresql, SiMedium} from 'react-icons/si'
 import {CgPokemon} from 'react-icons/cg'
-import {GiWhiteBook} from 'react-icons/gi'
+import {GiWhiteBook, GiFoodTruck} from 'react-icons/gi'
 import {VscJson} from 'react-icons/vsc'
 import {RiSlideshow3Line} from 'react-icons/ri'
 
@@ -15,8 +15,29 @@ const Projects = (props, ref) => {
     return (
         <div className="projects" ref={ref}>
             <h1>Projects</h1>
-            <h2>Here are some applications I have built</h2>
+            <h2>Here are some applications I have developed</h2>
             <VerticalTimeline className="vertical-timeline-custom-line">
+                <VerticalTimelineElement className="vertical-timeline-element--recipe"
+                    contentStyle={{background: "darkorange", color: "black", boxShadow:"0 3px 0 black"}}
+                    contentArrowStyle={{borderRight: "7px solid darkred"}}
+                    iconStyle={{background: "black", color: "darkorange"}}
+                    icon={<GiFoodTruck />}
+                >
+                    <h3 className="vertical-timeline-element-title">What's in the Fridge?</h3>
+                    <h4 className="vertical-timeline-element-subtitle">React.js, Ruby on Rails, SQL</h4>
+                    <p>                  
+                        In process
+                    </p>
+                    <div className="demo">
+                        <a>View Demo</a>
+                        <a href="https://github.com/moshriguez/whats-in-the-fridge-frontend">Source Code</a>
+                    </div>
+                    <div className="tools">
+                        <FaReact size={30} color="skyblue"/>
+                        <SiRails size={40} color="red"/>
+                        <DiSqllite size={40} color="#004747"/>
+                    </div>
+                </VerticalTimelineElement>
                 <VerticalTimelineElement className="vertical-timeline-element--pokemon"
                     contentStyle={{background: "darkred", color: "black", boxShadow:"0 3px 0 black"}}
                     contentArrowStyle={{borderRight: "7px solid darkred"}}
@@ -49,7 +70,7 @@ const Projects = (props, ref) => {
                     icon={<GiWhiteBook />}
                 >
                     <h3 className="vertical-timeline-element-title">Clear Knowledge</h3>
-                    <h4 className="vertical-timeline-element-subtitle">React.js with mock JSON server, Google Books AP</h4>
+                    <h4 className="vertical-timeline-element-subtitle">React.js with mock JSON server, Google Books API</h4>
                     <p>
                         Manage your own personal library and increase your knowledge. Create an account and search for a book where
                         you can read a brief summary, see the comments that other users have posted on that book, post and remove a
@@ -88,6 +109,42 @@ const Projects = (props, ref) => {
                         <div className="tools">
                             <DiJavascript1 size={30} color="yellow"/>
                             <VscJson size={30} color="white"/>
+                        </div>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement className="vertical-timeline-element--blog"
+                        contentStyle={{background: "white", color: "black", boxShadow:"0 3px 0 white"}}
+                        contentArrowStyle={{borderRight: "7px solid white"}}
+                        iconStyle={{background: "white", color: "black"}}
+                        icon={<SiMedium />}
+                    >
+                        <h3 className="vertical-timeline-element-title">Algorithms With Recursion</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Blog Post</h4>
+                        <div className="demo">
+                            <a href="https://cctran96.medium.com/algorithms-with-recursion-480d8b31880e">View Blog</a>
+                        </div>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement className="vertical-timeline-element--blog"
+                        contentStyle={{background: "white", color: "black", boxShadow:"0 3px 0 white"}}
+                        contentArrowStyle={{borderRight: "7px solid white"}}
+                        iconStyle={{background: "white", color: "black"}}
+                        icon={<SiMedium />}
+                    >
+                        <h3 className="vertical-timeline-element-title">Class vs Functional Components</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Blog Post</h4>
+                        <div className="demo">
+                            <a href="https://cctran96.medium.com/class-vs-functional-components-699be7976f6d">View Blog</a>
+                        </div>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement className="vertical-timeline-element--blog"
+                        contentStyle={{background: "white", color: "black", boxShadow:"0 3px 0 white"}}
+                        contentArrowStyle={{borderRight: "7px solid white"}}
+                        iconStyle={{background: "white", color: "black"}}
+                        icon={<SiMedium />}
+                    >
+                        <h3 className="vertical-timeline-element-title">CRUD: Basic Operations of Persistent Storage</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Blog Post</h4>
+                        <div className="demo">
+                            <a href="https://cctran96.medium.com/crud-basic-operations-of-persistent-storage-90393061fb30">View Blog</a>
                         </div>
                     </VerticalTimelineElement>
                 </VerticalTimeline> : null}

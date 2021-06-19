@@ -269,6 +269,14 @@ h1 {
     box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--blog .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px black, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--recipe .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px darkorange, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
 .tools {
     display: flex;
     align-items: center;
