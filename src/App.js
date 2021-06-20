@@ -1,9 +1,9 @@
-import './App.css';
+import './App.css'
 import React, {useState, useEffect, useRef} from 'react'
-import Header from './components/Header';
-import Bio from './components/Bio';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Header from './components/Header'
+import Bio from './components/Bio'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 import Banner from './components/Banner'
 import Logo from './icons/Logo'
 import Left from './sidebars/Left'
